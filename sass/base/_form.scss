@@ -1,0 +1,57 @@
+form {
+  margin-top: rem(65);
+}
+
+input[type="submit"],
+#{$all-text-inputs} {
+  margin-bottom: rem(20);
+  margin-top: rem(20);
+  display: block;
+  @include appearance(none);
+  width: 100%;
+  font-size: rem(16);
+  font-weight: 400;
+  padding: rem(18);
+  border: solid 1px white;
+  @include transition(all .3s ease-in-out);
+}
+
+#{$all-text-inputs} {
+  background: white;
+  border-radius: 5px;
+  resize: none;
+  box-shadow: none;
+}
+
+#{$all-text-inputs-hover},
+#{$all-text-inputs-focus}{
+  outline: none;
+}
+
+input[type="submit"]{
+  background: transparent;
+  color: white;
+  text-transform: uppercase;
+
+  &:hover{
+    cursor: pointer;
+    background: transparent;
+    background-color: $white;
+    color: $detail1;
+    border-color: $white;
+  }
+}
+
+.wpcf7-not-valid-tip{
+  color: white !important;
+  position: relative;
+  top: rem(-17);
+  font-size: rem(14) !important;
+}
+
+.wpcf7-response-output{
+  margin: 0 !important;
+  border: none !important;
+  color: white !important;
+  padding: 0 !important;
+}
